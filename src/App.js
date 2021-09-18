@@ -8,7 +8,7 @@ import { UserStorage } from "./userContext";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <UserStorage>
         <Header />
         <Routes>
